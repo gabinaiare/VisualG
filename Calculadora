@@ -4,17 +4,20 @@ Algoritmo "semnome"
 // Autor(a)    : Gabrielle
 // Data atual  : 04/01/2024
 Var
-   // Seção de Declarações das variáveis
+   // Declarações das variáveis com o tipo
    n1 , n2 , resultado :real
    operacao , rep : inteiro
+
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    repita
+  // Solicitar os números para realizar as operações:
       escreval ("Primeiro número:")
       leia (n1)
       escreval ("Segundo número:")
       leia (n2)
 
+   // Informar o código da operação:
       escreval ("Escolha a operação:")
       escreval ("1 - Adição")
       escreval ("2 - Subtração")
@@ -23,6 +26,7 @@ Inicio
       escreval ("5 - Potência")
       leia (operacao)
 
+   //Processo em que a calculadora vai somar, subtrair, dividir, potênciar ou multiplicar os valores informados
       escolha (operacao)
       caso 1
          resultado <- n1 + n2
@@ -43,6 +47,7 @@ Inicio
          escreval ("Operação inválida")
       fimescolha
 
+   //Aqui o usuário irá informar se deseja continuar a usar a calculadora ou se deseja parar
       escreval ("Deseja repetir?")
       escreval ("Digite 1 para sim")
       escreval ("Digite 2 para não")
